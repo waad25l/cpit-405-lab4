@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+:root{--bg:#f5f7fb;--surface:#fff;--text:#1f2937;--muted:#6b7280;--primary:#1f4f8a;--primary-dark:#173b67;--border:#d9e1ea;--accent:#eaf0f8}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{width:min(900px,92%);margin:0 auto}
+.hero{background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff;padding:54px 0 46px}
+.course-label{margin:0 0 8px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;opacity:.8}
+.hero h1{margin:0;font-size:clamp(2rem,5vw,3.6rem)}
+.subtitle{margin:10px 0 0;font-size:1.1rem;opacity:.9}
+main{padding:34px 0 50px}
+.card,.note{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:20px}
+.card h2,.note h2{margin-top:0;color:var(--primary-dark)}
+.profile-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:3px}
+.profile-grid p{margin:0;font-weight:600}
+.skills{display:flex;gap:10px;flex-wrap:wrap;list-style:none;padding:0;margin:0}
+.skills li{background:var(--accent);color:var(--primary-dark);padding:8px 12px;border-radius:999px;font-weight:600}
+.note{border-left:5px solid var(--primary)}
+code{font-family:Consolas,Monaco,monospace;background:#edf1f6;padding:2px 5px;border-radius:4px}
+footer{text-align:center;background:#111827;color:#fff;padding:20px}
+@media(max-width:600px){.profile-grid{grid-template-columns:1fr}}
